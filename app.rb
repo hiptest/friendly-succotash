@@ -4,6 +4,7 @@ require 'sinatra/base'
 class App < Sinatra::Application
   get '/add_line' do
     config = ParseConfig.new('succotash.conf')
+    return unless config.params['security_token'] == params[:token]
 
     content = []
     File.open(config.params['file']).each do |line|
