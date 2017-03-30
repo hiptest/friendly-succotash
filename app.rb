@@ -15,5 +15,8 @@ class App < Sinatra::Application
     end
 
     File.write(config.params['file'], content.join(""))
+    `#{config.params['command']}` unless config.params['command'].nil?
+
+    "Done :)"
   end
 end
