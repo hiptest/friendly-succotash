@@ -1,7 +1,7 @@
 Friendly succotash
 ==================
 
-Simple webhook server that updates a file by adding a line in a placeholder and runs a command later on.
+Simple webhook server that updates a file by adding a line in file after a given placeholder and runs a command later on.
 
 Install & run
 -------------
