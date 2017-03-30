@@ -27,7 +27,7 @@ then, a simple ``curl http://localhost:9292/add_line?line=The new pinger`` will 
 Security
 --------
 
-You can specify a security_token entry in the config file. Then you should add a parameter 'token=<my token>' in your cUrl request.
+You can specify a security_token entry in the config file. Then you should add a parameter 'token=XXXXXXX' in your cUrl request.
 
 Naming
 ------
