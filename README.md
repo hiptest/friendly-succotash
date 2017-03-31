@@ -1,6 +1,8 @@
 Friendly succotash
 ==================
 
+[![Build Status](https://travis-ci.org/hiptest/friendly-succotash.svg?branch=master)](https://travis-ci.org/hiptest/friendly-succotash)
+
 Simple webhook server that updates a file by adding a line in file after a given placeholder and runs a command later on.
 
 Install & run
