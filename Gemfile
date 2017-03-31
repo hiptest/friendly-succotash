@@ -5,6 +5,7 @@ gem 'sinatra'
 gem 'puma'
 gem 'dotenv'
 gem 'parseconfig'
+gem 'io-console'
 
 group :development, :test do
   gem 'rspec'
