@@ -31,4 +31,14 @@ class App < Sinatra::Application
 
     body "Done :)"
   end
+
+  # Stolen from Jgagny's answer here:
+  # http://stackoverflow.com/questions/19523889/sinatra-terminate-server-from-request
+  post '/terminate' do
+    body "I'll be back..."
+    # maybe clean things up here...
+    logger.info "Received terminate request!"
+    Thread.new { sleep 1; Process.kill 'INT', Process.pid }
+    halt 200
+  end
 end
